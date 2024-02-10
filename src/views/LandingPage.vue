@@ -97,7 +97,7 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/room.jpg" class="w-100 rounded-2" />
+              <img src="@/assets/img/landing-page/room01.jpg" class="w-100 rounded-2" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">EZZY Rooms & Suites</h4>

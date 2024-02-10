@@ -27,28 +27,6 @@
             </div>
           </div>
           <div class="col-4">
-            <div class="social">
-              <h2 class="text-white">Social</h2>
-              <ul class="text-white list-unstyled">
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-facebook fs-3 p-2"></i>Ezzy Hotel
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-instagram fs-3 p-2"></i
-                  ><router-link
-                    to="https://www.instagram.com/ezzyhotel/?hl=en"
-                    class="anchor text-white fw-medium"
-                    >Ezzy Hotel</router-link
-                  >
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-youtube fs-3 p-2 text-danger"></i
-                  ><router-link to="" class="anchor text-white fw-medium">Ezzy Tv</router-link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-4">
             <div class="maps">
               <h2 class="text-white"><i class="bi bi-geo-alt px-2 py-1"></i>Maps</h2>
               <iframe
@@ -69,9 +47,15 @@
       <div class="container-fluid ps-5">
         <div class="row">
           <div class="social-icon col-md-4 d-flex flex-warp">
-            <div class="fb"><a href=""><i class="bi bi-facebook fs-4"></i></a></div>
-            <div class="int"><a href=""><i class="int bi bi-instagram fs-4"></i></a></div>
-            <div class="yt"><a href=""><i class="yt bi bi-youtube fs-4"></i></a></div>
+            <div class="fb">
+              <a href=""><i class="bi bi-facebook fs-4"></i></a>
+            </div>
+            <div class="int">
+              <a href=""><i class="int bi bi-instagram fs-4"></i></a>
+            </div>
+            <div class="yt">
+              <a href=""><i class="yt bi bi-youtube fs-4"></i></a>
+            </div>
           </div>
           <div class="col-md-7">
             <div class="copyright d-flex justify-content-end">

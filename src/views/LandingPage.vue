@@ -36,17 +36,20 @@ export default {
     <div class="hero-text-content-wrapper">
       <div class="hero-text-content">
         <h2 class="hero-welcome">Welcome to</h2>
-        <h1 class="hero-brand">
+        <h1 class="hero-brand pb-4">
           <span class="hero-brand-ezzy">Ezzy</span>
 
           <span class="ms-3 hero-brand-hotel">Hotel</span>
         </h1>
+        <router-link to=""><button class="btn">Let's Get Started</button></router-link>
       </div>
     </div>
   </section>
   <section class="about container">
     <div class="row">
-      <div class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center">
+      <div
+        class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center"
+      >
         <div class="px-5">
           <h3 class="about-brand">Ezzy hotel</h3>
           <h1 class="about-welcome-title">Welcome</h1>
@@ -75,17 +78,20 @@ export default {
     <div class="discover-place container">
       <div class="row w-100 gx-5 gy-4">
         <div class="col-lg-4 col-12">
-          <div class="shadow p-3 py-4 rounded ">
+          <div class="shadow p-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
+              <img
+                src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg"
+                class="w-100 rounded"
+              />
             </div>
             <div>
               <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
               <div class="discover-content-text">
-                If you are looking Rooftop Wedding ceremony, tying your knot in Bali, will be even more memorable in the
-                brand new Roof Top wedding chapel with a stunning 360 views over Bali and Jimbaran Bay. get ready to
-                explore
-                a new life of togetherness. You will be able to celebrate your day with confidence.
+                If you are looking Rooftop Wedding ceremony, tying your knot in Bali, will be even
+                more memorable in the brand new Roof Top wedding chapel with a stunning 360 views
+                over Bali and Jimbaran Bay. get ready to explore a new life of togetherness. You
+                will be able to celebrate your day with confidence.
               </div>
               <div class="discover-learn-more">
                 <span class="me-2">Learn more</span>
@@ -97,14 +103,14 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/room01.jpg" class="w-100 rounded-2" />
+              <img src="@/assets/img/accomodation/room01.jpg" class="w-100 rounded-2" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">EZZY Rooms & Suites</h4>
               <div class="discover-content-text">
-                The 200 Rooms & Suites are designed with innovative elements in all aspects of the room, with dedicated
-                flexible workspaces, Free Wi-Fi in all area, private balcony 32" LED TV, in room Minibar and Safe deposit
-                box.
+                The 200 Rooms & Suites are designed with innovative elements in all aspects of the
+                room, with dedicated flexible workspaces, Free Wi-Fi in all area, private balcony
+                32" LED TV, in room Minibar and Safe deposit box.
               </div>
               <div class="discover-learn-more">
                 <span class="me-2">Learn more</span>
@@ -114,16 +120,17 @@ export default {
           </div>
         </div>
         <div class="col-lg-4 col-12">
-          <div class="shadow px-3 py-4  rounded">
+          <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
               <img src="@/assets/img/landing-page/rooftop.jpg" class="w-100 rounded" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">Ezzy Rooftop Lounge & Dining</h4>
               <div class="discover-content-text">
-                Located on the top of the hill of Bali with incredible views over Bali Bay and the North of Bali, the
-                highest hotel in Bali, Ezzy Hotel Bali, is offering an amazing spot on its rooftop with stylish lounge
-                sittings and innovative bar and culinary menus along with seductive phonic infrastructure.
+                Located on the top of the hill of Bali with incredible views over Bali Bay and the
+                North of Bali, the highest hotel in Bali, Ezzy Hotel Bali, is offering an amazing
+                spot on its rooftop with stylish lounge sittings and innovative bar and culinary
+                menus along with seductive phonic infrastructure.
               </div>
               <div class="discover-learn-more">
                 <span class="me-2">Learn more</span>
@@ -140,9 +147,9 @@ export default {
             <div>
               <h4 class="text-uppercase my-3">Adult & Kid's Pool</h4>
               <div class="discover-content-text">
-                For those who are travelling with children, families can enjoy the famous Ezzy Kid's Club that provides a
-                safe and entertaining environment where children can play and learn at the some time with the professional
-                play ers that will take care of them.
+                For those who are travelling with children, families can enjoy the famous Ezzy Kid's
+                Club that provides a safe and entertaining environment where children can play and
+                learn at the some time with the professional play ers that will take care of them.
               </div>
               <div class="discover-learn-more">
                 <span class="me-2">Learn more</span>
@@ -164,33 +171,39 @@ export default {
         <div class="col-8">
           <div class="row gy-4">
             <div class="col-6">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100  facility-img-height-expand" />
+              <img
+                src="@/assets/img/landing-page/pool.jpg"
+                class="w-100 facility-img-height-expand"
+              />
             </div>
             <div class="col-6 facility-item">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100 facility-img-height-expand" />
+              <img
+                src="@/assets/img/landing-page/pool.jpg"
+                class="w-100 facility-img-height-expand"
+              />
             </div>
-            <div class=" col-12">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100 facility-img-height-short" />
+            <div class="col-12">
+              <img
+                src="@/assets/img/landing-page/pool.jpg"
+                class="w-100 facility-img-height-short"
+              />
             </div>
-
           </div>
         </div>
         <div class="col-4">
           <div class="row gy-4">
-            <div class=" col-12">
+            <div class="col-12">
               <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
             </div>
-            <div class=" col-12">
+            <div class="col-12">
               <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
             </div>
-            <div class=" col-12">
+            <div class="col-12">
               <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
 </template>
@@ -349,17 +362,16 @@ export default {
   overflow: hidden;
 }
 
-.about-img>img {
+.about-img > img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 300ms;
 }
 
-.about-img>img:hover {
+.about-img > img:hover {
   transform: scale(1.2);
 }
-
 
 .discover-head {
   color: white;
@@ -367,8 +379,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)), url('@/assets/img/landing-page/discover.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('@/assets/img/landing-page/discover.jpg');
   background-position: center;
   padding: 80px 10px;
   background-repeat: no-repeat;
@@ -409,7 +421,7 @@ export default {
 }
 
 .facility {
-  background-color: #F3EFEA;
+  background-color: #f3efea;
 }
 
 .facility-head {
@@ -435,6 +447,13 @@ export default {
 
 .facility-img-height-short {
   aspect-ratio: 460/140;
+}
+
+.btn {
+  background: linear-gradient(80deg, #ffa500, orangered);
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 10px 20px;
 }
 
 @media only screen and (min-width: 500px) {

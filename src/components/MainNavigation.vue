@@ -26,7 +26,7 @@ export default {};
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Accomodation</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>

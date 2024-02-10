@@ -3,7 +3,7 @@
     <div class="py-5 bg-dark px-5">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <div class="contact">
               <h2 class="text-white text-uppercase">Contact</h2>
               <ul class="text-white list-unstyled">
@@ -26,29 +26,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
-            <div class="social">
-              <h2 class="text-white">Social</h2>
-              <ul class="text-white list-unstyled">
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-facebook fs-3 p-2"></i>Ezzy Hotel
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-instagram fs-3 p-2"></i
-                  ><router-link
-                    to="https://www.instagram.com/ezzyhotel/?hl=en"
-                    class="anchor text-white fw-medium"
-                    >Ezzy Hotel</router-link
-                  >
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="bi bi-youtube fs-3 p-2 text-danger"></i
-                  ><router-link to="" class="anchor text-white fw-medium">Ezzy Tv</router-link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-4">
+          <div class="col-6">
             <div class="maps">
               <h2 class="text-white"><i class="bi bi-geo-alt px-2 py-1"></i>Maps</h2>
               <iframe

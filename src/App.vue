@@ -8,4 +8,65 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.grid-sizer-3,
+.grid-sizer-3~.grid-item,
+.grid-item-3 {
+  width: 33.33333333333333%;
+}
+
+.grid-sizer-2,
+.grid-sizer-2~.grid-item,
+.grid-item-2 {
+  width: 50%
+}
+
+.grid-sizer-1,
+.grid-sizer-1~.grid-item,
+.grid-item-1 {
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 768px; ) {
+
+  .grid-sizer-md-1,
+  .grid-sizer-md-1~.grid-item,
+  .grid-item-md-1 {
+    width: 100%;
+  }
+
+  .grid-sizer-md-2,
+  .grid-sizer-md-2~.grid-item,
+  .grid-item-md-2 {
+    width: 50%;
+  }
+
+  .grid-sizer-md-3,
+  .grid-sizer-md-3~.grid-item,
+  .grid-item-md-3 {
+    width: 33.33333333333333%;
+  }
+}
+
+@media only screen and (min-width: 992px; ) {
+
+  .grid-sizer-lg-1,
+  .grid-sizer-lg-1~.grid-item,
+  .grid-item-lg-1 {
+    width: 100%;
+  }
+
+  .grid-sizer-lg-2,
+  .grid-sizer-lg-2~.grid-item,
+  .grid-item-lg-2 {
+    width: 50%;
+  }
+
+  .grid-sizer-lg-3,
+  .grid-sizer-lg-3~.grid-item,
+  .grid-item-lg-3 {
+    width: 33.33333333333333%;
+  }
+}
 </style>

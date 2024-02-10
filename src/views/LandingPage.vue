@@ -1,8 +1,28 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
+import masonry from 'masonry-layout';
 export default {
   components: {
     Navigation: MainNavigation
+  },
+  data() {
+    return {
+      facilityMasonry: null
+    };
+  },
+  methods: {
+    facilityHandleLoad() {
+      console.log('test');
+      this.facilityMasonry.layout();
+    }
+  },
+  mounted() {
+    const gridContainer = this.$refs.facilityContent;
+    this.facilityMasonry = new masonry(gridContainer, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
   }
 };
 </script>
@@ -55,25 +75,27 @@ export default {
     <div class="discover-place container">
       <div class="row w-100 gx-5 gy-4">
         <div class="col-lg-4 col-12">
-          <div class="w-100">
-            <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
-          </div>
-          <div>
-            <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
-            <div class="discover-content-text">
-              If you are looking Rooftop Wedding ceremony, tying your knot in Bali, will be even more memorable in the
-              brand new Roof Top wedding chapel with a stunning 360 views over Bali and Jimbaran Bay. get ready to explore
-              a new life of togetherness. You will be able to celebrate your day with confidence.
-
+          <div class="shadow p-3 py-4 rounded ">
+            <div class="w-100">
+              <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
             </div>
-            <div class="discover-learn-more">
-              <span class="me-2">Learn more</span>
-              <i class="bi bi-arrow-right"></i>
+            <div>
+              <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
+              <div class="discover-content-text">
+                If you are looking Rooftop Wedding ceremony, tying your knot in Bali, will be even more memorable in the
+                brand new Roof Top wedding chapel with a stunning 360 views over Bali and Jimbaran Bay. get ready to
+                explore
+                a new life of togetherness. You will be able to celebrate your day with confidence.
+              </div>
+              <div class="discover-learn-more">
+                <span class="me-2">Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-12">
-          <div class="shadow px-3 py-3 rounded">
+          <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
               <img src="@/assets/img/landing-page/room.jpg" class="w-100 rounded-2" />
             </div>
@@ -92,40 +114,83 @@ export default {
           </div>
         </div>
         <div class="col-lg-4 col-12">
-          <div class="w-100">
-            <img src="@/assets/img/landing-page/rooftop.jpg" class="w-100 rounded" />
-          </div>
-          <div>
-            <h4 class="text-uppercase my-3">Ezzy Rooftop Lounge & Dining</h4>
-            <div class="discover-content-text">
-              Located on the top of the hill of Bali with incredible views over Bali Bay and the North of Bali, the
-              highest hotel in Bali, Ezzy Hotel Bali, is offering an amazing spot on its rooftop with stylish lounge
-              sittings and innovative bar and culinary menus along with seductive phonic infrastructure.
+          <div class="shadow px-3 py-4  rounded">
+            <div class="w-100">
+              <img src="@/assets/img/landing-page/rooftop.jpg" class="w-100 rounded" />
             </div>
-            <div class="discover-learn-more">
-              <span class="me-2">Learn more</span>
-              <i class="bi bi-arrow-right"></i>
+            <div>
+              <h4 class="text-uppercase my-3">Ezzy Rooftop Lounge & Dining</h4>
+              <div class="discover-content-text">
+                Located on the top of the hill of Bali with incredible views over Bali Bay and the North of Bali, the
+                highest hotel in Bali, Ezzy Hotel Bali, is offering an amazing spot on its rooftop with stylish lounge
+                sittings and innovative bar and culinary menus along with seductive phonic infrastructure.
+              </div>
+              <div class="discover-learn-more">
+                <span class="me-2">Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-12">
-          <div class="w-100">
-            <img src="@/assets/img/landing-page/pool.jpg" class="w-100 rounded" />
-          </div>
-          <div>
-            <h4 class="text-uppercase my-3">Adult & Kid's Pool</h4>
-            <div class="discover-content-text">
-              For those who are travelling with children, families can enjoy the famous Ezzy Kid's Club that provides a
-              safe and entertaining environment where children can play and learn at the some time with the professional
-              play ers that will take care of them.
+          <div class="shadow rounded px-3 py-4">
+            <div class="w-100">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100 rounded" />
             </div>
-            <div class="discover-learn-more">
-              <span class="me-2">Learn more</span>
-              <i class="bi bi-arrow-right"></i>
+            <div>
+              <h4 class="text-uppercase my-3">Adult & Kid's Pool</h4>
+              <div class="discover-content-text">
+                For those who are travelling with children, families can enjoy the famous Ezzy Kid's Club that provides a
+                safe and entertaining environment where children can play and learn at the some time with the professional
+                play ers that will take care of them.
+              </div>
+              <div class="discover-learn-more">
+                <span class="me-2">Learn more</span>
+                <i class="bi bi-arrow-right"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="py-5 facility">
+    <div class="facility-head">
+      <div>Discover</div>
+      <h1>Our place</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="row gy-4">
+            <div class="col-6">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100  facility-img-height-expand" />
+            </div>
+            <div class="col-6 facility-item">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100 facility-img-height-expand" />
+            </div>
+            <div class=" col-12">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100 facility-img-height-short" />
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row gy-4">
+            <div class=" col-12">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+            </div>
+            <div class=" col-12">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+            </div>
+            <div class=" col-12">
+              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 </template>
@@ -325,7 +390,6 @@ export default {
   font-size: 3rem;
 }
 
-
 .discover-place img {
   aspect-ratio: 5/3;
   object-fit: cover;
@@ -342,6 +406,35 @@ export default {
   font-size: 0.85rem;
   color: #666666;
   line-height: 1.7;
+}
+
+.facility {
+  background-color: #F3EFEA;
+}
+
+.facility-head {
+  text-align: center;
+}
+
+.facility-head :nth-child(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgb(236, 30, 133);
+  font-family: 'Courgette', 'sans-serif';
+}
+
+.facility-head :nth-child(2) {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.facility-img-height-expand {
+  aspect-ratio: 460/660;
+}
+
+.facility-img-height-short {
+  aspect-ratio: 460/140;
 }
 
 @media only screen and (min-width: 500px) {

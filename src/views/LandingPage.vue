@@ -36,11 +36,12 @@ export default {
     <div class="hero-text-content-wrapper">
       <div class="hero-text-content">
         <h2 class="hero-welcome">Welcome to</h2>
-        <h1 class="hero-brand">
+        <h1 class="hero-brand pb-4">
           <span class="hero-brand-ezzy">Ezzy</span>
 
           <span class="ms-3 hero-brand-hotel">Hotel</span>
         </h1>
+        <router-link to=""><button class="btn">Let's Get Started</button></router-link>
       </div>
     </div>
   </section>
@@ -97,7 +98,7 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/room.jpg" class="w-100 rounded-2" />
+              <img src="@/assets/img/landing-page/room01.jpg" class="w-100 rounded-2" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">EZZY Rooms & Suites</h4>
@@ -435,6 +436,13 @@ export default {
 
 .facility-img-height-short {
   aspect-ratio: 460/140;
+}
+
+.btn {
+  background: linear-gradient(80deg, #FFA500, orangered);
+  border-radius: 40px;
+  font-weight: 500;
+  padding: 10px 20px;
 }
 
 @media only screen and (min-width: 500px) {

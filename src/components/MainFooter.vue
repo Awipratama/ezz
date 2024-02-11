@@ -3,7 +3,7 @@
     <div class="py-5 bg-dark px-5">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <div class="contact">
               <h2 class="text-white text-uppercase">Contact</h2>
               <ul class="text-white list-unstyled">
@@ -26,7 +26,11 @@
               </p>
             </div>
           </div>
+<<<<<<< HEAD
           <div class="col-4">
+=======
+          <div class="col-6">
+>>>>>>> 4bc19a9c8fcd3e331ff7061e2d5ccd6544e973c2
             <div class="maps">
               <h2 class="text-white"><i class="bi bi-geo-alt px-2 py-1"></i>Maps</h2>
               <iframe

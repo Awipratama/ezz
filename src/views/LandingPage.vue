@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-  <Navigation />
+  <Navigation active="home" />
   <section class="hero">
     <video autoplay muted loop class="w-100 h-100 hero-video">
       <source src="@/assets/video/highlight.mp4" type="video/mp4" />
@@ -76,7 +76,7 @@ export default {
       <h1>Our place</h1>
     </div>
     <div class="discover-place container">
-      <div class="row w-100 gx-5 gy-4">
+      <div class="row w-100 gx-5 gy-4 m-0">
         <div class="col-lg-4 col-12">
           <div class="shadow p-3 py-4 rounded">
             <div class="w-100">
@@ -164,42 +164,57 @@ export default {
   <section class="py-5 facility">
     <div class="facility-head">
       <div>Discover</div>
-      <h1>Our place</h1>
+      <h1 class="mb-4">Our Facility</h1>
     </div>
     <div class="container">
-      <div class="row">
-        <div class="col-8">
+      <div class="row gy-4">
+        <div class="col-lg-8 col-12">
           <div class="row gy-4">
-            <div class="col-6">
-              <img
-                src="@/assets/img/landing-page/pool.jpg"
-                class="w-100 facility-img-height-expand"
-              />
+            <div class="col-md-6 col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/restaurant.jpg" class="w-100 facility-img-height-expand" />
+              </div>
+              <div class="facility-name"> Restaurant</div>
             </div>
-            <div class="col-6 facility-item">
-              <img
-                src="@/assets/img/landing-page/pool.jpg"
-                class="w-100 facility-img-height-expand"
-              />
+            <div class="col-md-6 col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/meeting-room.jpg" class="w-100 facility-img-height-expand shadow" />
+              </div>
+              <div class="facility-name"> Meeting room </div>
             </div>
-            <div class="col-12">
-              <img
-                src="@/assets/img/landing-page/pool.jpg"
-                class="w-100 facility-img-height-short"
-              />
+            <div class="col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/bar.jpg" class="w-100 facility-img-height-short" />
+              </div>
+              <div class="facility-name"> Cafe & Bar </div>
+
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="row gy-4">
-            <div class="col-12">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+            <div class="col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/gym.jpg" class="w-100" />
+              </div>
+              <div class="facility-name"> Fitness center </div>
+
             </div>
-            <div class="col-12">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+            <div class="col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/kids-club.jpg" class="w-100" />
+              </div>
+              <div class="facility-name">
+                Kids club
+              </div>
             </div>
-            <div class="col-12">
-              <img src="@/assets/img/landing-page/pool.jpg" class="w-100" />
+
+            <div class="col-12 position-relative">
+              <div class="facility-img-wrapper">
+                <img src="@/assets/img/landing-page/boutique.jpg" style="object-position: top"
+                  class="w-100 facility-img-height-expand-2 " />
+              </div>
+              <div class="facility-name">Boutique</div>
             </div>
           </div>
         </div>
@@ -320,14 +335,14 @@ export default {
 }
 
 .about-brand {
-  font-size: 2.3rem;
+  font-size: clamp(1.5rem, 0.5rem + 4vw, 2.3rem);
   font-family: 'Courgette', sans-serif;
   color: #ed117f;
 }
 
 .about-welcome-title {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 0.5rem + 8vw, 3.5rem);
   position: relative;
   font-weight: 600;
   padding-bottom: 8px;
@@ -390,7 +405,7 @@ export default {
 }
 
 .discover-head :nth-child(1) {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 0.5rem + 4vw, 2.5rem);
   font-weight: 600;
   color: rgb(236, 30, 133);
   font-family: 'Courgette', 'sans-serif';
@@ -399,7 +414,7 @@ export default {
 .discover-head :nth-child(2) {
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: clamp(2rem, 0.5rem + 8vw, 3rem);
 }
 
 .discover-place img {
@@ -421,7 +436,14 @@ export default {
 }
 
 .facility {
-  background-color: #f3efea;
+  background-color: #F3EFEA;
+}
+
+.facility img {
+  object-fit: cover;
+  filter: brightness(0.8);
+  border-radius: 8px;
+  aspect-ratio: 460/307;
 }
 
 .facility-head {
@@ -429,7 +451,7 @@ export default {
 }
 
 .facility-head :nth-child(1) {
-  font-size: 2rem;
+  font-size: clamp(1rem, 0.5rem + 5vw, 2rem);
   font-weight: 600;
   color: rgb(236, 30, 133);
   font-family: 'Courgette', 'sans-serif';
@@ -438,19 +460,58 @@ export default {
 .facility-head :nth-child(2) {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 0.5rem + 8vw, 2.5rem);
 }
 
 .facility-img-height-expand {
-  aspect-ratio: 460/660;
+  aspect-ratio: 460/660 !important;
+}
+
+.facility-img-height-expand-2 {
+  aspect-ratio: 460/437 !important;
 }
 
 .facility-img-height-short {
-  aspect-ratio: 460/140;
+  aspect-ratio: 460/205 !important;
+}
+
+.facility-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.3rem);
+  width: max-content;
+  max-width: 100%;
+  color: #5f5753;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgba(255, 251, 251, 0.922);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  transition: all 500ms;
+}
+
+.facility-name:hover {
+  background-color: #ed117fed;
+  color: white;
+}
+
+.facility-img-wrapper {
+  overflow: hidden;
+
+}
+
+.facility-img-wrapper img {
+  transition: all 500ms;
+}
+
+.facility-img-wrapper img:hover {
+  transform: scale(1.2);
 }
 
 .btn {
-  background: linear-gradient(80deg, #ffa500, orangered);
+  background: linear-gradient(80deg, #FFA500, orangered);
   border-radius: 40px;
   font-weight: 500;
   padding: 10px 20px;

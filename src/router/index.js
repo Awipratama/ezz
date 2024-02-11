@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import ContactPage from '@/views/ContactPage.vue';
 import LandingPage from '@/views/LandingPage.vue';
 import NotFound from '@/views/NotFound.vue';
 import AccomodationPage from '@/views/AccomodationPage.vue';
@@ -8,6 +9,14 @@ const router = createRouter({
     {
       path: '/',
       component: LandingPage
+    },
+    {
+      path: '/accomodation',
+      component: AccomodationPage
+    },
+    {
+      path: '/contact',
+      component: ContactPage
     },
     {
       path: '/:pathMatch(.*)',

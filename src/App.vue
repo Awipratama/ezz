@@ -10,6 +10,13 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+@media only screen and (max-width: 778px) {
+  body {
+    padding-top: var(--nav-height);
+  }
+
+}
+
 .grid-sizer-3,
 .grid-sizer-3 ~ .grid-item,
 .grid-item-3 {

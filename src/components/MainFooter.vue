@@ -26,11 +26,7 @@
               </p>
             </div>
           </div>
-<<<<<<< HEAD
-          <div class="col-4">
-=======
           <div class="col-6">
->>>>>>> 4bc19a9c8fcd3e331ff7061e2d5ccd6544e973c2
             <div class="maps">
               <h2 class="text-white"><i class="bi bi-geo-alt px-2 py-1"></i>Maps</h2>
               <iframe

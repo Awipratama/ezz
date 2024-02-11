@@ -49,13 +49,13 @@ export default {
             <router-link class="nav-link" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Accomodation</a>
+            <a class="nav-link" href="/accomodation">Accomodation</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item" :class="isActive('contact')">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>

@@ -141,6 +141,24 @@ export default {
                 <span class="nav-description">Dining</span>
               </a>
             </li>
+            <li class="nav-item" :class="isActive('galery')">
+              <a class="nav-link fs-3 px-3" href="/galery">
+                <i class="bi bi-copy pe-2"></i>
+                <span class="nav-description">Gallery</span>
+              </a>
+            </li>
+            <li class="nav-item" :class="isActive('pools')">
+              <a class="nav-link fs-3 px-3" href="/pools">
+                <img src="@/assets/img/icon/food-icon.svg" class="icon-img me-2" />
+                <span class="nav-description">Pools</span>
+              </a>
+            </li>
+            <li class="nav-item" :class="isActive('wedding')">
+              <a class="nav-link fs-3 px-3" href="/wedding">
+                <i class="bi bi-flower1 pe-2"></i>
+                <span class="nav-description">Wedding</span>
+              </a>
+            </li>
             <li class="nav-item" :class="isActive('contact')">
               <a class="nav-link fs-3 px-3" href="/contact">
                 <i class="bi bi-person-circle pe-2 nav-icon"></i>
@@ -163,6 +181,22 @@ export default {
           </li>
           <li class="nav-item" :class="isActive('galery')">
             <a class="nav-link" to="/galery">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/pools">Pools</a></li>
+              <li><a class="dropdown-item" href="/wedding">Wedding</a></li>
+            </ul>
           </li>
           <li class="nav-item" :class="isActive('contact')">
             <a class="nav-link" to="/contact">Contact</a>

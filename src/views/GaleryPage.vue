@@ -88,7 +88,7 @@ export default {
 </script>
 
 <template>
-  <Navigation />
+  <Navigation active="galery" />
   <section class="hero text-center">
     <h3 class="sub-title"><span>Ezzy</span> Hotel</h3>
     <h1 class="hero-title text-white">Gallery</h1>

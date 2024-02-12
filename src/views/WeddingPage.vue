@@ -32,7 +32,7 @@ export default {
         </div>
     </section>
     <section class="wedding-experience py-5">
-        <div class="container">
+        <div>
             <div class="wedding-experience-content-wrapper">
                 <div class="row gy-4">
                     <div class="col-lg-6 col-12 wedding-experience-img-wrapper">
@@ -40,7 +40,7 @@ export default {
                     </div>
                     <div class="col-lg-6 col-12 wedding-experience-content">
                         <h5 class="content-title">
-                            Table view
+                            Ceremony
                         </h5>
                         <div class="content-description">
                             Ut elementum pretium ligula, in convallis elit consequat nec. Vestibulum et lorem tristique,
@@ -63,7 +63,7 @@ export default {
                     </div>
                     <div class="col-lg-6 col-12 wedding-experience-content">
                         <h5 class="content-title">
-                            Beautiful view
+                            Honeymoon
                         </h5>
                         <div class="content-description">
                             Ut elementum pretium ligula, in convallis elit consequat nec. Vestibulum et lorem tristique,
@@ -120,6 +120,10 @@ export default {
     background-position: center;
     display: block;
     background-repeat: no-repeat;
+}
+
+.wedding {
+    padding-inline: 20px;
 }
 
 .sub-title {
@@ -181,6 +185,7 @@ export default {
 
 .wedding-experience {
     background-color: #F3EFEA;
+    padding-inline: 30px;
 }
 
 .wedding-place {
@@ -272,5 +277,15 @@ export default {
 
 .wedding-experience-content-wrapper>.row:nth-child(even) .wedding-experience-content {
     order: -1;
+}
+
+@media only screen and (max-width: 997px) {
+    .wedding-experience-content-wrapper>.row:nth-child(even) .wedding-experience-content {
+        order: 2;
+    }
+
+    .wedding-experience-content {
+        padding-inline: 10px;
+    }
 }
 </style>

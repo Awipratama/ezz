@@ -9,7 +9,7 @@ export default {
 </script>
 <template>
   <footer class="footer">
-    <div class="py-4 bg-dark">
+    <div class="py-5 bg-dark">
       <div class="container px-4">
         <div class="row gy-4">
           <div class="col-lg-4 col-12">
@@ -49,20 +49,21 @@ export default {
     </div>
     <div class="sec-footer bg-green">
       <div class="container-fluid ps-5">
-        <div class="row">
-          <div class="social-icon col-md-4 d-flex flex-warp">
+        <div class="row ">
+          <div
+            class="social-icon mb-3 mb-lg-0 col-lg-4 col-12 d-flex flex-wrap justify-content-center justify-content-lg-start">
             <div class="fb">
-              <a href=""><i class="bi bi-facebook fs-4"></i></a>
+              <a href="/facebook.com"><i class="bi bi-facebook fs-4"></i></a>
             </div>
             <div class="int">
-              <a href=""><i class="int bi bi-instagram fs-4"></i></a>
+              <a href="/instagram.com"><i class="int bi bi-instagram fs-4"></i></a>
             </div>
             <div class="yt">
-              <a href=""><i class="yt bi bi-youtube fs-4"></i></a>
+              <a href="/youtube.com"><i class="yt bi bi-youtube fs-4"></i></a>
             </div>
           </div>
-          <div class="col-sm-7 col-12">
-            <div class="copyright d-flex justify-content-center justify-content-sm-end">
+          <div class="col-lg-7 col-12">
+            <div class="copyright d-flex mx-auto justify-content-center justify-content-lg-end">
               <span> &#169; copyright {{ yearNow }}.Made with ❤️ by Group 5</span>
             </div>
           </div>

@@ -167,24 +167,18 @@ export default {
           <li class="nav-item" :class="isActive('galery')">
             <a class="nav-link" href="/galery">Gallery</a>
           </li>
+          <li class="nav-item" :class="isActive('contact')">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               More
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="/pools">Pools</a></li>
-              <li><a class="dropdown-item" href="/wedding">Wedding</a></li>
+              <li><a class="dropdown-item" :class="isActive('pool')" href="/pools">Pools</a></li>
+              <li><a class="dropdown-item" :class="isActive('wedding')" href="/wedding">Wedding</a></li>
             </ul>
-          </li>
-          <li class="nav-item" :class="isActive('contact')">
-            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>

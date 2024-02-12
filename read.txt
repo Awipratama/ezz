@@ -1,3 +1,5 @@
 1.install node js
-2.jalankan npm install (*note: jika terjadi error saat install delete node modules lalu jalankan ulang kembali npm install)
-3.ketik di browser localhost:5173
+2.jalankan npm install di internal (*note: jika terjadi error saat install delete node modules lalu jalankan ulang kembali npm install)
+3.jalankan npm run build di terminal
+4.jalankan npm run dev di terminal terpisah
+5.ketik di browser localhost:5173

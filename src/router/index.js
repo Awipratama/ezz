@@ -6,6 +6,7 @@ import AccomodationPage from '@/views/AccomodationPage.vue';
 import DinningPage from '@/views/DinningPage.vue';
 import WeddingPage from '@/views/WeddingPage.vue';
 import PoolsPage from '@/views/PoolsPage.vue';
+import GaleryPage from '@/views/GaleryPage.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -37,6 +38,10 @@ const router = createRouter({
     {
       path: '/pools',
       component: PoolsPage
+    },
+    {
+      path: '/galery',
+      component: GaleryPage
     },
     {
       path: '/:pathMatch(.*)',

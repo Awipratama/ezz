@@ -122,7 +122,7 @@ export default {
   margin-block: auto;
 }
 .row {
-  background-color: rgb(239, 229, 223);
+  background-color: rgba(239, 229, 223, 0.445);
 }
 .pool-experience-content-wrapper > .row:nth-child(even) .pool-experience-content {
   order: -1;

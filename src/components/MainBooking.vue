@@ -5,25 +5,15 @@
         <div class="row justify-content-around">
           <div class="col-2 d-none d-md-block">
             <h5 class="input-text">Date</h5>
-            <input type="datetime-local" name="Date" placeholder="Date" class="booking-input" />
+            <input type="date" name="Date" placeholder="Date" class="booking-input" />
           </div>
           <div class="col-2 d-none d-md-block">
             <h5 class="input-text">Check-in</h5>
-            <input
-              type="datetime-local"
-              name="Checkin"
-              placeholder="*Check-in"
-              class="booking-input"
-            />
+            <input type="date" name="Checkin" placeholder="*Check-in" class="booking-input" />
           </div>
           <div class="col-2 d-none d-md-block">
             <h5 class="input-text">Check-out</h5>
-            <input
-              type="datetime-local"
-              name="Checkout"
-              placeholder="*Check-out"
-              class="booking-input"
-            />
+            <input type="date" name="Checkout" placeholder="*Check-out" class="booking-input" />
           </div>
           <div class="col-2 d-none d-md-block">
             <h5 class="input-text">Promo Code</h5>
@@ -53,6 +43,7 @@
 .booking-input {
   padding: 8px;
   border-radius: 8px;
+  padding-right: 30px;
 }
 .input-text {
   font-weight: 400;

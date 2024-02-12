@@ -1,0 +1,3 @@
+1.install node js
+2.jalankan npm install (*note: jika terjadi error saat install delete node modules lalu jalankan ulang kembali npm install)
+3.ketik di browser localhost:5173

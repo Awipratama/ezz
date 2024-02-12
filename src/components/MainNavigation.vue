@@ -92,30 +92,15 @@ export default {
           <span class="text-brand-main">Hotel</span>
         </span>
       </a>
-      <button
-        class="btn btn-white border d-block d-lg-none"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvas"
-        aria-controls="offcanvas"
-      >
+      <button class="btn btn-white border d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas" aria-controls="offcanvas">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvas"
-        aria-labelledby="offcanvas"
-        data-bs-backdrop="false"
-      >
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas"
+        data-bs-backdrop="false">
         <div class="offcanvas-header text-uppercase d-flex flex-column d-lg-none">
-          <button
-            type="button"
-            class="btn-close ms-auto p-3 text-reset d-block d-lg-none"
-            data-bs-toggle="#offcanvas"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close ms-auto p-3 text-reset d-block d-lg-none" data-bs-toggle="#offcanvas"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
           <div class="d-flex justify-content-center py-3 ps-2">
             <img src="@/assets/img/generic/logo.png" width="80" class="me-2" />
           </div>
@@ -162,10 +147,10 @@ export default {
             <a class="nav-link" href="/dining">Dining</a>
           </li>
           <li class="nav-item" :class="isActive('galery')">
-            <a class="nav-link" to="/galery">Gallery</a>
+            <a class="nav-link" href="/galery">Gallery</a>
           </li>
           <li class="nav-item" :class="isActive('contact')">
-            <a class="nav-link" to="/contact">Contact</a>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>

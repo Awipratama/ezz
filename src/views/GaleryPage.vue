@@ -88,7 +88,7 @@ export default {
 </script>
 
 <template>
-  <Navigation />
+  <Navigation active="galery" />
   <section class="hero text-center">
     <h3 class="sub-title"><span>Ezzy</span> Hotel</h3>
     <h1 class="hero-title text-white">Gallery</h1>
@@ -96,37 +96,25 @@ export default {
   <section class="galery py-5 container">
     <div class="filter d-flex flex-wrap list-unstyled justify-content-center pb-5">
       <li class="px-3">
-        <span :class="addClassActive('all')" class="text-filter" @click="handleFiter('all')"
-          >All</span
-        >
+        <span :class="addClassActive('all')" class="text-filter" @click="handleFiter('all')">All</span>
       </li>
       <li class="px-3">
-        <span :class="addClassActive('bar')" class="text-filter" @click="handleFiter('bar')"
-          >Bar</span
-        >
+        <span :class="addClassActive('bar')" class="text-filter" @click="handleFiter('bar')">Bar</span>
       </li>
       <li class="px-3">
-        <span @click="handleFiter('lobby')" :class="addClassActive('lobby')" class="text-filter"
-          >Lobby</span
-        >
+        <span @click="handleFiter('lobby')" :class="addClassActive('lobby')" class="text-filter">Lobby</span>
       </li>
       <li class="px-3">
-        <span @click="handleFiter('room')" :class="addClassActive('room')" class="text-filter"
-          >Rooms</span
-        >
+        <span @click="handleFiter('room')" :class="addClassActive('room')" class="text-filter">Rooms</span>
       </li>
       <li class="px-3">
-        <span
-          @click="handleFiter('restaurant')"
-          :class="addClassActive('restaurant')"
-          class="text-filter"
-          >Restaurant</span
-        >
+        <span @click="handleFiter('restaurant')" :class="addClassActive('restaurant')"
+          class="text-filter">Restaurant</span>
       </li>
     </div>
     <div class="row gy-4">
       <template v-for="img in images" :key="img">
-        <div class="col-4" v-if="isActive(img.category)">
+        <div class="col-sm-4 col-12" v-if="isActive(img.category)">
           <div class="img-wrapper">
             <img :src="img.path" alt="" class="w-100 rounded" />
           </div>
@@ -147,18 +135,26 @@ export default {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
+.filter {
+  gap: 10px;
+}
+
 .hero-title {
   font-size: 3.5rem;
   text-transform: uppercase;
 }
+
 .sub-title {
   font-family: 'Courgette', sans-serif;
   font-style: italic;
   color: white;
 }
+
 .sub-title span {
   color: orange;
 }
+
 .img-wrapper img {
   transition: all 500ms;
 }
@@ -176,10 +172,12 @@ export default {
   border-radius: 10px;
   transition: all 500ms;
 }
+
 .text-filter.active {
   color: white;
   background-color: black;
 }
+
 .filter {
   cursor: pointer;
 }

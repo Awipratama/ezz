@@ -4,13 +4,6 @@ export default {
   components: {
     Navigation: MainNavigation
   },
-
-  methods: {
-
-  },
-  mounted() {
-
-  }
 };
 </script>
 
@@ -34,9 +27,7 @@ export default {
   </section>
   <section class="about container">
     <div class="row">
-      <div
-        class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center"
-      >
+      <div class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center">
         <div class="px-5">
           <h3 class="about-brand">Ezzy hotel</h3>
           <h1 class="about-welcome-title">Welcome</h1>
@@ -67,10 +58,7 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow p-3 py-4 rounded">
             <div class="w-100">
-              <img
-                src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg"
-                class="w-100 rounded"
-              />
+              <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
@@ -81,7 +69,7 @@ export default {
                 will be able to celebrate your day with confidence.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <router-link to="/wedding" class="me-2">Learn more</router-link>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -100,7 +88,7 @@ export default {
                 32" LED TV, in room Minibar and Safe deposit box.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <a href="/accomodation" class="me-2">Learn more</a>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -120,7 +108,7 @@ export default {
                 menus along with seductive phonic infrastructure.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <a href="/dining" class="me-2">Learn more</a>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -159,28 +147,19 @@ export default {
           <div class="row gy-4">
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img
-                  src="@/assets/img/landing-page/restaurant.jpg"
-                  class="w-100 facility-img-height-expand"
-                />
+                <img src="@/assets/img/landing-page/restaurant.jpg" class="w-100 facility-img-height-expand" />
               </div>
               <div class="facility-name">Restaurant</div>
             </div>
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img
-                  src="@/assets/img/landing-page/meeting-room.jpg"
-                  class="w-100 facility-img-height-expand shadow"
-                />
+                <img src="@/assets/img/landing-page/meeting-room.jpg" class="w-100 facility-img-height-expand shadow" />
               </div>
               <div class="facility-name">Meeting room</div>
             </div>
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img
-                  src="@/assets/img/landing-page/bar.jpg"
-                  class="w-100 facility-img-height-short"
-                />
+                <img src="@/assets/img/landing-page/bar.jpg" class="w-100 facility-img-height-short" />
               </div>
               <div class="facility-name">Cafe & Bar</div>
             </div>
@@ -203,51 +182,11 @@ export default {
 
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img
-                  src="@/assets/img/landing-page/boutique.jpg"
-                  style="object-position: top"
-                  class="w-100 facility-img-height-expand-2"
-                />
+                <img src="@/assets/img/landing-page/boutique.jpg" style="object-position: top"
+                  class="w-100 facility-img-height-expand-2" />
               </div>
               <div class="facility-name">Boutique</div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="booking">
-    <div class="container">
-      <div class="custom-card w-100">
-        <div class="row justify-content-around">
-          <div class="col-2">
-            <h5>Date</h5>
-            <input type="datetime-local" name="Date" placeholder="Date" class="booking-input" />
-          </div>
-          <div class="col-2">
-            <h5>Check-in</h5>
-            <input
-              type="datetime-local"
-              name="Checkin"
-              placeholder="*Check-in"
-              class="booking-input"
-            />
-          </div>
-          <div class="col-2">
-            <h5>Check-out</h5>
-            <input
-              type="datetime-local"
-              name="Checkout"
-              placeholder="*Check-out"
-              class="booking-input"
-            />
-          </div>
-          <div class="col-2">
-            <h5>Promo Code</h5>
-            <input type="number" name="Name" placeholder="*Promo Code" class="booking-input" />
-          </div>
-          <div class="col-2">
-            <router-link to=""><button class="booking-button">Book Now</button></router-link>
           </div>
         </div>
       </div>
@@ -410,14 +349,14 @@ export default {
   overflow: hidden;
 }
 
-.about-img > img {
+.about-img>img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 300ms;
 }
 
-.about-img > img:hover {
+.about-img>img:hover {
   transform: scale(1.2);
 }
 
@@ -460,6 +399,15 @@ export default {
   font-size: 0.85rem;
   color: #666666;
   margin-top: 10px;
+}
+
+.discover-learn-more a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.discover-learn-more a:hover {
+  color: #117fb4;
 }
 
 .discover-content-text {
@@ -548,20 +496,38 @@ export default {
   font-weight: 500;
   padding: 10px 20px;
   border: none;
+  opacity: 0;
+  font-size: clamp(0.6rem, 1.5vw + 0.3rem, 1rem);
+  animation: 2s 2s forwards callToActionShowUp;
 }
+
+@keyframes callToActionShowUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn:hover {
   background: linear-gradient(120deg, orange, red);
 }
+
 .custom-card {
   padding-left: 50px;
 }
+
 .booking .container {
   padding: 50px;
 }
+
 .booking-input {
   padding: 8px;
   border-radius: 8px;
 }
+
 .booking-button {
   width: 100%;
   padding: 8px;
@@ -571,10 +537,12 @@ export default {
   margin-top: 32px;
   transition: all 500ms;
 }
+
 .booking-button:hover {
   background: black;
   color: white;
 }
+
 @media only screen and (min-width: 500px) {
   .hero-text-content {
     margin-top: -50px;

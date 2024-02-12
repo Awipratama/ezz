@@ -11,6 +11,9 @@ export default {
 <template>
     <Navigation :noResponsivePad="true" active="dining" />
     <section class="hero">
+        <h5 class="sub-text">
+            <span class="text-orange">Ezzy</span> <span>Hotel</span>
+        </h5>
         <h4 class="hero-title">Dining</h4>
     </section>
     <section class=" dining-place container">
@@ -155,8 +158,15 @@ export default {
     filter: brightness(75%);
 }
 
+.sub-text {
+    font-size: 2rem;
+    font-family: 'Courgette', sans-serif;
+    text-align: center;
+}
 
-
+.text-orange {
+    color: orange;
+}
 
 .hero {
     color: white;
@@ -170,7 +180,7 @@ export default {
 .hero-title {
     text-align: center;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 3rem;
 }
 

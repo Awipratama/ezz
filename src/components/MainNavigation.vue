@@ -25,7 +25,7 @@ export default {
         document.body.style.setProperty('--nav-height', height + 'px');
       }
       if (this.pad) {
-        document.body.style.paddingTop = height + 'px';
+        document.body.style.paddinghrefp = height + 'px';
       }
       window.addEventListener(
         'scroll',
@@ -83,7 +83,7 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light top-0 left-0 px-3 position-fixed" ref="nav">
+  <nav class="navbar navbar-expand-lg navbar-light hrefp-0 left-0 px-3 position-fixed" ref="nav">
     <div class="container py-1">
       <a class="navbar-brand" href="#">
         <img src="@/assets/img/generic/logo.png" width="80" class="me-2" />
@@ -92,31 +92,47 @@ export default {
           <span class="text-brand-main">Hotel</span>
         </span>
       </a>
-      <button class="btn btn-white border d-block d-md-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button class="btn btn-white border d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas" aria-controls="offcanvas">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-        <div class="offcanvas-header text-uppercase d-flex align-items-center d-block d-md-none">
-          <h5 id="offcanvasRightLabel"><span>Ezzy</span> Hotel</h5>
-          <button type="button" class="btn-close text-reset d-block d-md-none" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas"
+        data-bs-backdrop="false">
+        <div class="offcanvas-header text-uppercase d-flex flex-column d-lg-none">
+          <button type="button" class="btn-close ms-auto p-3 text-reset d-block d-lg-none" data-bs-toggle="#offcanvas"
+            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <div class="d-flex justify-content-center py-3 ps-2">
+            <img src="@/assets/img/generic/logo.png" width="80" class="me-2" />
+          </div>
+          <h5 id="offcanvasRightLabel">
+            <span>Ezzy</span> <span class="text-black">Hotel</span>
+          </h5>
         </div>
-        <div class="offcanvas-body d-block d-md-none">
+        <div class="offcanvas-body d-block d-lg-none">
           <ul class="navbar-nav">
             <li class="nav-item" :class="isActive('home')">
-              <router-link class="nav-link fs-3 px-3" to="/"><i class="bi bi-house-add fs-1 pe-2"></i> Home</router-link>
+              <a class="nav-link px-3" href="/">
+                <i class="bi bi-house-add nav-icon pe-2"></i>
+                <span class="nav-description">Home</span>
+              </a>
             </li>
             <li class="nav-item" :class="isActive('accomodation')">
-              <router-link class="nav-link fs-3 px-3" to="/accomodation"><i class="bi bi-calendar-check fs-1 pe-2"></i>
-                Accomodation</router-link>
+              <a class="nav-link  px-3" href="/accomodation">
+                <i class="bi bi-calendar-check nav-icon pe-2"></i>
+                <span class="nav-description">Accomodation</span>
+              </a>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link fs-3 px-3" to="">Pricing</router-link>
+            <li class="nav-item" :class="isActive('dining')">
+              <a class="nav-link fs-3 px-3" href="/dining">
+                <img src="@/assets/img/icon/food-icon.svg" class="icon-img me-2" />
+                <span class="nav-description">Dining</span>
+              </a>
             </li>
             <li class="nav-item" :class="isActive('contact')">
-              <router-link class="nav-link fs-3 px-3" to=""><i class="bi bi-person-circle fs-1 pe-2"></i>
-                Contact</router-link>
+              <a class="nav-link fs-3 px-3" href="/contact">
+                <i class="bi bi-person-circle  pe-2 nav-icon"></i>
+                <span class="nav-description">Contact</span>
+              </a>
             </li>
           </ul>
         </div>
@@ -124,17 +140,16 @@ export default {
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav d-flex">
           <li class="nav-item" :class="isActive('home')">
-            <router-link class="nav-link" to="/">Home</router-link>
+            <a class="nav-link" href="/">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="isActive('accomodation')">
             <a class="nav-link" href="/accomodation">Accomodation</a>
           </li>
           <li class="nav-item" :class="isActive('dining')">
-            <router-link class="nav-link" to="/dining">Dining</router-link>
+            <a class="nav-link" href="/dining">Dining</a>
           </li>
           <li class="nav-item" :class="isActive('contact')">
-
-            <router-link class="nav-link" to="/contact">Contact</router-link>
+            <a class="nav-link" href="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -143,9 +158,15 @@ export default {
 </template>
 
 <style scoped>
+.offcanvas-header {
+  padding: 10px;
+  border-bottom: 1px solid rgb(188, 136, 136);
+}
+
 .navbar {
   z-index: 99999;
   width: 100%;
+  top: 0;
   transition: all 200ms;
 }
 
@@ -198,17 +219,10 @@ export default {
 }
 
 .offcanvas {
-  width: 85%;
+  max-width: 400px;
+  width: 100%;
 }
 
-.offcanvas-header::after {
-  content: '';
-  text-decoration: none;
-  width: 90%;
-  height: 8%;
-  position: absolute;
-  border-bottom: 2px solid gray;
-}
 
 .offcanvas-header h5 {
   font-style: oblique;
@@ -222,6 +236,20 @@ export default {
 
 .btn-close {
   margin-right: 10px;
+  font-size: 1rem;
+}
+
+.nav-description {
+  font-size: 1rem;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.icon-img {
+  width: 1.5rem;
+}
+
+.nav-icon {
   font-size: 1.5rem;
 }
 </style>

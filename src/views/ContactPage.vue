@@ -1,16 +1,18 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
+import MainFooter from '@/components/MainFooter.vue';
 export default {
     components: {
-        Navigation: MainNavigation
+        Navigation: MainNavigation,
+        MainFooter: MainFooter
     }
 };
 </script>
 <template>
-    <Navigation active="contact" :pad="true" />
+    <Navigation active="contact" />
     <section class="hero text-white">
         <h1 class="hero-title">Contact US</h1>
-        <div class="container row w-100 mt-5 hero-content">
+        <div class=" row w-100 mt-5 hero-content">
             <div>
                 <div class="info-wrapper">
                     <div>
@@ -35,11 +37,12 @@ export default {
             <div>
                 <div class="info-wrapper">
                     <div>
-                        <i class="bi bi-geo-alt-fill icon"></i>
+                        <i class="bi bi-clock-fill icon"></i>
                     </div>
-                    <h4 class="info-title">Location</h4>
+                    <h4 class="info-title">Opening Times</h4>
                     <div>
-                        <!-- Jln. Hayam Wuruk No. 199 Denpasar Bali -->
+                        Open at 09.00 Am - 19.00 Pm <br />Every Days except Sunday
+
                     </div>
                 </div>
             </div>
@@ -50,22 +53,22 @@ export default {
         <div class="container">
             <form class="form">
                 <h3 class="mb-5 text-center text-capitalize">Send us message</h3>
-                <div class="row gx-6">
-                    <div class="col-6 form-group">
+                <div class="row gx-6 gy-3">
+                    <div class="col-sm-6 col-12 form-group">
                         <label class="form-label">First Name</label>
                         <input class="w-100 form-control" placeholder="First name" />
                     </div>
-                    <div class="col-6 form-group">
+                    <div class="col-sm-6 col-12 form-group">
                         <label class="form-label">Last Name</label>
                         <input class="w-100 form-control" placeholder="Last Name" />
                     </div>
                 </div>
-                <div class="row gx-6 mt-5">
-                    <div class="col-6 form-group">
+                <div class="row gx-6 mt-lg-4 mt-1 gy-3">
+                    <div class="col-sm-6 col-12 form-group">
                         <label class="form-label">Email</label>
                         <input class="w-100 form-control" placeholder="First name" />
                     </div>
-                    <div class="col-6 form-group">
+                    <div class="col-sm-6 col-12 form-group">
                         <label class="form-label">Phone</label>
                         <input class="w-100 form-control" placeholder="Last Name" />
                     </div>
@@ -80,7 +83,7 @@ export default {
             </form>
         </div>
     </section>
-    <section></section>
+    <MainFooter />
 </template>
 
 <style scoped>
@@ -92,8 +95,8 @@ export default {
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('@/assets/img/contact/contact.jpg');
-    padding-block: 100px;
-    background-size: 110%;
+    padding-top: 150px;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -105,6 +108,8 @@ export default {
 
 .hero-content {
     display: grid;
+    padding-top: 30px;
+    max-width: 1250px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -166,5 +171,17 @@ export default {
     font-weight: 500;
     padding: 0;
     padding-top: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .info-wrapper {
+        justify-content: start;
+        padding-inline: 20px;
+    }
 }
 </style>

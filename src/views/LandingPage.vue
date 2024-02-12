@@ -1,6 +1,5 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
-import masonry from 'masonry-layout';
 import MainFooter from '@/components/MainFooter.vue';
 
 export default {
@@ -14,18 +13,10 @@ export default {
     };
   },
   methods: {
-    facilityHandleLoad() {
-      console.log('test');
-      this.facilityMasonry.layout();
-    }
+
   },
   mounted() {
-    const gridContainer = this.$refs.facilityContent;
-    this.facilityMasonry = new masonry(gridContainer, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
+
   }
 };
 </script>

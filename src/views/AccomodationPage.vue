@@ -10,7 +10,7 @@ export default {
   data() {
     return {
       category: 'all'
-    }
+    };
   },
   methods: {
     filter(category) {
@@ -21,9 +21,8 @@ export default {
     },
     addActiveClass(category) {
       return {
-        'active': this.category === category
+        active: this.category === category
       };
-
     }
   }
 };
@@ -44,13 +43,27 @@ export default {
   <section class="accomodation">
     <div class="accomodation-listing">
       <div class="cbp-filters py-4 d-flex justify-content-center flex-wrap">
-        <span class="cbp-filter-item px-2" @click="filter('all')" :class="addActiveClass('all')">All</span>
-        <span class="cbp px-3" @click="filter('regular')" :class="addActiveClass('regular')">Regular Rooms</span>
-        <span class="cbp px-3" @click="filter('suite')" :class="addActiveClass('suite')">Suite Rooms</span>
-        <span class="cbp px-3" @click="filter('honeymoon')" :class="addActiveClass('honeymoon')">Honey moon</span>
-        <span class="cbp px-3" @click="filter('bungalow')" :class="addActiveClass('bungalow')">bungalow</span>
-        <span class="cbp px-3" @click="filter('premium')" :class="addActiveClass('premium')">Premium</span>
-        <span class="cbp px-3" @click="filter('deluxe')" :class="addActiveClass('deluxe')">Deluxe</span>
+        <span class="cbp-filter-item px-2" @click="filter('all')" :class="addActiveClass('all')"
+          >All</span
+        >
+        <span class="cbp px-3" @click="filter('regular')" :class="addActiveClass('regular')"
+          >Regular Rooms</span
+        >
+        <span class="cbp px-3" @click="filter('suite')" :class="addActiveClass('suite')"
+          >Suite Rooms</span
+        >
+        <span class="cbp px-3" @click="filter('honeymoon')" :class="addActiveClass('honeymoon')"
+          >Honey moon</span
+        >
+        <span class="cbp px-3" @click="filter('bungalow')" :class="addActiveClass('bungalow')"
+          >bungalow</span
+        >
+        <span class="cbp px-3" @click="filter('premium')" :class="addActiveClass('premium')"
+          >Premium</span
+        >
+        <span class="cbp px-3" @click="filter('deluxe')" :class="addActiveClass('deluxe')"
+          >Deluxe</span
+        >
       </div>
       <div class="list-room py-4">
         <div class="regular" v-if="isActive('regular')">
@@ -67,7 +80,7 @@ export default {
                     <div class="col-lg-7 col-12">
                       <img src="@/assets/img/accomodation/room02.jpg" class="w-100 h-100" alt="" />
                     </div>
-                    <div class="col-lg-5 col-12 ">
+                    <div class="col-lg-5 col-12">
                       <div class="info-room">
                         <h3>Superior Room</h3>
                         <div class="info">
@@ -105,16 +118,16 @@ export default {
                     <div class="col-lg-7 col-12">
                       <img src="@/assets/img/accomodation/room03.jpg" class="w-100 h-100" alt="" />
                     </div>
-                    <div class="col-lg-5 col-12 ">
+                    <div class="col-lg-5 col-12">
                       <div class="info-room">
                         <h3>River Suite</h3>
                         <div class="info">
                           <p><i class="bi bi-arrows-fullscreen pe-2"></i>Room size : 108 sqm</p>
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
-                            2 flat screen tv's (in bedroom and livingroom), wardrobe, bed side tables,
-                            mini bar, Safety Deposit Box (SDB), air conditioner, standing lamps,
-                            working desk, dressing table, luggage rack, tea and coffee making
+                            2 flat screen tv's (in bedroom and livingroom), wardrobe, bed side
+                            tables, mini bar, Safety Deposit Box (SDB), air conditioner, standing
+                            lamps, working desk, dressing table, luggage rack, tea and coffee making
                             facilities, vanity, ensuite bathroom with bathub, livingroom completed
                             with sofas, flat screen tv, minibar and kitchenette, third level of 4th
                             building.
@@ -139,9 +152,9 @@ export default {
                           <p><i class="bi bi-arrows-fullscreen pe-2"></i>Room size : 418 sqm</p>
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
-                            2 flat screen TV's (in bedroom and livingroom), wardrobe, bed side tables,
-                            mini bar, Safety Deposit Box (SDB), air conditioner, standing lamps,
-                            working desk, dressing table, luggage rack, tea and coffee making
+                            2 flat screen TV's (in bedroom and livingroom), wardrobe, bed side
+                            tables, mini bar, Safety Deposit Box (SDB), air conditioner, standing
+                            lamps, working desk, dressing table, luggage rack, tea and coffee making
                             facilities, vanity, ensuite bathroom with bathub, pateo beside the
                             livingroom, livingroom completed with sofas, flat screen tv, minibar and
                             kitchenette, top level of the 2nd building.
@@ -159,16 +172,16 @@ export default {
                     <div class="col-lg-7 col-12">
                       <img src="@/assets/img/accomodation/room03.jpg" alt="" />
                     </div>
-                    <div class="col-lg-5 col-12 ">
+                    <div class="col-lg-5 col-12">
                       <div class="info-room py-4">
                         <h3>Family Suite</h3>
                         <div class="info">
                           <p><i class="bi bi-arrows-fullscreen pe-2"></i>Room size : 150 sqm</p>
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
-                            2 flat screen TV's (in bedroom and livingroom), wardrobe, bed side tables,
-                            mini bar, Safety Deposit Box (SDB), air conditioner, standing lamps,
-                            working desk, dressing table, luggage rack, tea and coffee making
+                            2 flat screen TV's (in bedroom and livingroom), wardrobe, bed side
+                            tables, mini bar, Safety Deposit Box (SDB), air conditioner, standing
+                            lamps, working desk, dressing table, luggage rack, tea and coffee making
                             facilities, vanity, ensuite bathroom with bathub, livingroom completed
                             with sofas, flat screen TV, minibar and kitchenette.
                           </p>
@@ -185,7 +198,7 @@ export default {
                     <div class="col-lg-7 col-12">
                       <img src="@/assets/img/accomodation/room03.jpg" alt="" />
                     </div>
-                    <div class="col-lg-5 col-12 ">
+                    <div class="col-lg-5 col-12">
                       <div class="info-room">
                         <h3>Junior Suite</h3>
                         <div class="info">
@@ -193,9 +206,9 @@ export default {
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
                             flat screen TV, wardrobe, bed side tables, mini bar, Safety Deposit Box
-                            (SDB), air conditioner, room completed with sofas, standing lamps, working
-                            desk, dressing table, luggage rack, tea and coffee making facilities,
-                            vanity, ensuite bathroom with bathub.
+                            (SDB), air conditioner, room completed with sofas, standing lamps,
+                            working desk, dressing table, luggage rack, tea and coffee making
+                            facilities, vanity, ensuite bathroom with bathub.
                           </p>
                         </div>
                         <button class="custom-btn">Check In</button>
@@ -255,9 +268,9 @@ export default {
                           <p><i class="bi bi-house-check pe-2"></i>Available Room : 5 Rooms</p>
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
-                            2 flat screen tv's (in bedroom and livingroom), wardrobe, bed side tables,
-                            mini bar, Safety Deposit Box (SDB), air conditioner, standing lamps,
-                            working desk, dressing table, luggage rack, tea and coffee making
+                            2 flat screen tv's (in bedroom and livingroom), wardrobe, bed side
+                            tables, mini bar, Safety Deposit Box (SDB), air conditioner, standing
+                            lamps, working desk, dressing table, luggage rack, tea and coffee making
                             facilities, vanity, ensuite bathroom with bathub.
                           </p>
                         </div>
@@ -389,8 +402,8 @@ export default {
                         <h3>Rooftop Bungalow</h3>
                         <div class="info">
                           <p>
-                            <i class="bi bi-geo-alt pe-2"></i>Location : At the top of the 3rd and 4th
-                            guilding
+                            <i class="bi bi-geo-alt pe-2"></i>Location : At the top of the 3rd and
+                            4th guilding
                           </p>
                           <p><i class="bi bi-folder-plus pe-2"></i>Room Features :</p>
                           <p class="text">
@@ -441,8 +454,6 @@ export default {
   height: 100%;
 }
 
-
-
 .hero-text {
   margin-top: -12rem;
 }
@@ -479,6 +490,9 @@ export default {
   text-decoration: none;
   color: gray;
   font-size: 18px;
+}
+.cbp {
+  cursor: pointer;
 }
 
 .cbp-filters a:hover {
@@ -521,8 +535,6 @@ export default {
   margin-top: 2rem;
   font-size: 14px;
 }
-
-
 
 .info p {
   margin-bottom: 5px;

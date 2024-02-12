@@ -2,10 +2,10 @@
 import MainNavigation from '@/components/MainNavigation.vue';
 import MainFooter from '@/components/MainFooter.vue';
 export default {
-    components: {
-        MainFooter: MainFooter,
-        Navigation: MainNavigation
-    }
+  components: {
+    MainFooter: MainFooter,
+    Navigation: MainNavigation
+  }
 };
 </script>
 <template>
@@ -155,7 +155,7 @@ export default {
 
 <style scoped>
 .darken {
-    filter: brightness(75%);
+  filter: brightness(75%);
 }
 
 .sub-text {
@@ -169,12 +169,13 @@ export default {
 }
 
 .hero {
-    color: white;
-    background-repeat: no-repeat;
-    padding-block: 160px 150px;
-    background-size: cover;
-    background-position: center center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('@/assets/img/dinning/restaurant.jpg');
+  color: white;
+  background-repeat: no-repeat;
+  padding-block: 160px 150px;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('@/assets/img/dinning/restaurant.jpg');
 }
 
 .hero-title {
@@ -184,105 +185,104 @@ export default {
     font-size: 3rem;
 }
 
-
 .dining-place {
-    padding-top: 30px;
-    padding-bottom: 100px;
-    max-width: 1200px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  max-width: 1200px;
 }
 
 .dining-place img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .dining-place-title {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .dining-place-name {
-    margin-block: 14px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 500;
+  margin-block: 14px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .dining-place-description {
-    font-size: 0.8rem;
-    line-height: 1.7;
+  font-size: 0.8rem;
+  line-height: 1.7;
 }
 
 .dining-subhead-description {
-    padding-inline: 50px;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 40px;
-
+  padding-inline: 50px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .dining-experience {
-    padding-top: 40px;
-    background-color: #F3EFEA;
-    padding-bottom: 30px;
+  padding-top: 40px;
+  background-color: #f3efea;
+  padding-bottom: 30px;
 }
 
 .dining-experience-title {
-    text-transform: capitalize;
-    font-size: 1.6rem;
-    margin-bottom: 30px;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
 }
 
 .text-brand {
-    color: orange;
-    font-weight: 500;
+  color: orange;
+  font-weight: 500;
 }
 
 .dining-experience-img-wrapper {
-    overflow: hidden;
-    border-radius: 8px;
-    background-color: inherit;
-    max-width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: inherit;
+  max-width: 100%;
 }
 
 .dining-experience-img-wrapper img {
-    width: 100%;
-    aspect-ratio: 646/431;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 646/431;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
-
 .dining-experience-content {
-    padding: 30px;
-    margin-block: auto;
+  padding: 30px;
+  margin-block: auto;
 }
 
 .dining-experience-content .content-title {
-    font-size: clamp(0.9rem, 4vw + 0.5rem, 1.6rem);
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: clamp(0.9rem, 4vw + 0.5rem, 1.6rem);
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .dining-experience-content .content-description {
-    font-size: 0.9rem;
-    line-height: 1.7;
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
 
-.dining-experience-content-wrapper>.row {
-    padding: 50px 10px;
+.dining-experience-content-wrapper > .row {
+  padding: 50px 10px;
 }
 
-.dining-experience-content-wrapper>.row:nth-child(even) .dining-experience-content {
-    order: -1;
+.dining-experience-content-wrapper > .row:nth-child(even) .dining-experience-content {
+  order: -1;
 }
+
+/* .dining-experience-content-wrapper>.row:nth-child(even) . */
 
 @media only screen and (max-width: 992px) {
-    .dining-experience-content {
-        padding: 0 15px;
-    }
+  .dining-experience-content {
+    padding: 0 15px;
+  }
 
-    .dining-experience-content-wrapper>.row:nth-child(even) .dining-experience-content {
-        order: 2;
-    }
+  .dining-experience-content-wrapper > .row:nth-child(even) .dining-experience-content {
+    order: 2;
+  }
 }
 </style>

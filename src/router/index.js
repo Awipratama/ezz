@@ -4,7 +4,10 @@ import LandingPage from '@/views/LandingPage.vue';
 import NotFound from '@/views/NotFound.vue';
 import AccomodationPage from '@/views/AccomodationPage.vue';
 import DinningPage from '@/views/DinningPage.vue';
-import WeddingPage from '@/views/WeddingPage.vue';
+// import WeddingPage from '@/views/WeddingPage.vue';
+import PoolsPage from '@/views/PoolsPage.vue';
+import GaleryPage from '@/views/GaleryPage.vue';
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -24,17 +27,25 @@ const router = createRouter({
       path: '/contact',
       component: ContactPage
     },
+    // {
+    //   path: '/wedding',
+    //   // component: WeddingPage
+    // },
     {
-      path: '/wedding',
-      component: WeddingPage
+      path: '/accomodation',
+      component: AccomodationPage
+    },
+    {
+      path: '/pools',
+      component: PoolsPage
+    },
+    {
+      path: '/galery',
+      component: GaleryPage
     },
     {
       path: '/:pathMatch(.*)',
       component: NotFound
-    },
-    {
-      path: '/accomodation',
-      component: AccomodationPage
     }
   ]
 });

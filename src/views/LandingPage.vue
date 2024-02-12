@@ -1,9 +1,14 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
+import MainFooter from '@/components/MainFooter.vue';
+import MainBooking from '@/components/MainBooking.vue';
+
 export default {
   components: {
-    Navigation: MainNavigation
-  },
+    Navigation: MainNavigation,
+    MainFooter: MainFooter,
+    Booking: MainBooking
+  }
 };
 </script>
 
@@ -21,13 +26,15 @@ export default {
 
           <span class="ms-3 hero-brand-hotel">Hotel</span>
         </h1>
-        <router-link to=""><button class="btn text-white">Let's Get Started</button></router-link>
+        <a href="#about"><button class="btn text-white">Let's Get Started</button></a>
       </div>
     </div>
   </section>
-  <section class="about container">
+  <section class="about container" id="about">
     <div class="row">
-      <div class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center">
+      <div
+        class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center"
+      >
         <div class="px-5">
           <h3 class="about-brand">Ezzy hotel</h3>
           <h1 class="about-welcome-title">Welcome</h1>
@@ -58,7 +65,10 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow p-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
+              <img
+                src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg"
+                class="w-100 rounded"
+              />
             </div>
             <div>
               <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
@@ -127,8 +137,10 @@ export default {
                 learn at the some time with the professional play ers that will take care of them.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
-                <i class="bi bi-arrow-right"></i>
+                <router-link to="/pools" class="text-decoration-none text-secondary">
+                  <span class="me-2">Learn more</span>
+                  <i class="bi bi-arrow-right"></i>
+                </router-link>
               </div>
             </div>
           </div>
@@ -147,19 +159,28 @@ export default {
           <div class="row gy-4">
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/restaurant.jpg" class="w-100 facility-img-height-expand" />
+                <img
+                  src="@/assets/img/landing-page/restaurant.jpg"
+                  class="w-100 facility-img-height-expand"
+                />
               </div>
               <div class="facility-name">Restaurant</div>
             </div>
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/meeting-room.jpg" class="w-100 facility-img-height-expand shadow" />
+                <img
+                  src="@/assets/img/landing-page/meeting-room.jpg"
+                  class="w-100 facility-img-height-expand shadow"
+                />
               </div>
               <div class="facility-name">Meeting room</div>
             </div>
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/bar.jpg" class="w-100 facility-img-height-short" />
+                <img
+                  src="@/assets/img/landing-page/bar.jpg"
+                  class="w-100 facility-img-height-short"
+                />
               </div>
               <div class="facility-name">Cafe & Bar</div>
             </div>
@@ -182,8 +203,11 @@ export default {
 
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/boutique.jpg" style="object-position: top"
-                  class="w-100 facility-img-height-expand-2" />
+                <img
+                  src="@/assets/img/landing-page/boutique.jpg"
+                  style="object-position: top"
+                  class="w-100 facility-img-height-expand-2"
+                />
               </div>
               <div class="facility-name">Boutique</div>
             </div>
@@ -191,7 +215,9 @@ export default {
         </div>
       </div>
     </div>
+    <Booking />
   </section>
+  <MainFooter />
 </template>
 
 <style scoped>
@@ -349,14 +375,14 @@ export default {
   overflow: hidden;
 }
 
-.about-img>img {
+.about-img > img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 300ms;
 }
 
-.about-img>img:hover {
+.about-img > img:hover {
   transform: scale(1.2);
 }
 
@@ -514,35 +540,6 @@ export default {
 .btn:hover {
   background: linear-gradient(120deg, orange, red);
 }
-
-.custom-card {
-  padding-left: 50px;
-}
-
-.booking .container {
-  padding: 50px;
-}
-
-.booking-input {
-  padding: 8px;
-  border-radius: 8px;
-}
-
-.booking-button {
-  width: 100%;
-  padding: 8px;
-  background: white;
-  color: black;
-  border-radius: 8px;
-  margin-top: 32px;
-  transition: all 500ms;
-}
-
-.booking-button:hover {
-  background: black;
-  color: white;
-}
-
 @media only screen and (min-width: 500px) {
   .hero-text-content {
     margin-top: -50px;

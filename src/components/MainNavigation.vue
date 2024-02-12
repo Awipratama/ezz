@@ -92,21 +92,34 @@ export default {
           <span class="text-brand-main">Hotel</span>
         </span>
       </a>
-      <button class="btn btn-white border d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvas" aria-controls="offcanvas">
+      <button
+        class="btn btn-white border d-block d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas"
-        data-bs-backdrop="false">
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvas"
+        aria-labelledby="offcanvas"
+        data-bs-backdrop="false"
+      >
         <div class="offcanvas-header text-uppercase d-flex flex-column d-lg-none">
-          <button type="button" class="btn-close ms-auto p-3 text-reset d-block d-lg-none" data-bs-toggle="#offcanvas"
-            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close ms-auto p-3 text-reset d-block d-lg-none"
+            data-bs-toggle="#offcanvas"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
           <div class="d-flex justify-content-center py-3 ps-2">
             <img src="@/assets/img/generic/logo.png" width="80" class="me-2" />
           </div>
-          <h5 id="offcanvasRightLabel">
-            <span>Ezzy</span> <span class="text-black">Hotel</span>
-          </h5>
+          <h5 id="offcanvasRightLabel"><span>Ezzy</span> <span class="text-black">Hotel</span></h5>
         </div>
         <div class="offcanvas-body d-block d-lg-none">
           <ul class="navbar-nav">
@@ -117,7 +130,7 @@ export default {
               </a>
             </li>
             <li class="nav-item" :class="isActive('accomodation')">
-              <a class="nav-link  px-3" href="/accomodation">
+              <a class="nav-link px-3" href="/accomodation">
                 <i class="bi bi-calendar-check nav-icon pe-2"></i>
                 <span class="nav-description">Accomodation</span>
               </a>
@@ -130,7 +143,7 @@ export default {
             </li>
             <li class="nav-item" :class="isActive('contact')">
               <a class="nav-link fs-3 px-3" href="/contact">
-                <i class="bi bi-person-circle  pe-2 nav-icon"></i>
+                <i class="bi bi-person-circle pe-2 nav-icon"></i>
                 <span class="nav-description">Contact</span>
               </a>
             </li>
@@ -148,8 +161,11 @@ export default {
           <li class="nav-item" :class="isActive('dining')">
             <a class="nav-link" href="/dining">Dining</a>
           </li>
+          <li class="nav-item" :class="isActive('galery')">
+            <a class="nav-link" to="/galery">Gallery</a>
+          </li>
           <li class="nav-item" :class="isActive('contact')">
-            <a class="nav-link" href="/contact">Contact</a>
+            <a class="nav-link" to="/contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -222,7 +238,6 @@ export default {
   max-width: 400px;
   width: 100%;
 }
-
 
 .offcanvas-header h5 {
   font-style: oblique;

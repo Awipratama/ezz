@@ -8,14 +8,7 @@ export default {
     Navigation: MainNavigation,
     MainFooter: MainFooter,
     Booking: MainBooking
-  },
-  data() {
-    return {
-      facilityMasonry: null
-    };
-  },
-  methods: {},
-  mounted() {}
+  }
 };
 </script>
 
@@ -86,7 +79,7 @@ export default {
                 will be able to celebrate your day with confidence.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <router-link to="/wedding" class="me-2">Learn more</router-link>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -105,7 +98,7 @@ export default {
                 32" LED TV, in room Minibar and Safe deposit box.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <a href="/accomodation" class="me-2">Learn more</a>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -125,7 +118,7 @@ export default {
                 menus along with seductive phonic infrastructure.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
+                <a href="/dining" class="me-2">Learn more</a>
                 <i class="bi bi-arrow-right"></i>
               </div>
             </div>
@@ -434,6 +427,15 @@ export default {
   margin-top: 10px;
 }
 
+.discover-learn-more a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.discover-learn-more a:hover {
+  color: #117fb4;
+}
+
 .discover-content-text {
   font-size: 0.85rem;
   color: #666666;
@@ -520,7 +522,21 @@ export default {
   font-weight: 500;
   padding: 10px 20px;
   border: none;
+  opacity: 0;
+  font-size: clamp(0.6rem, 1.5vw + 0.3rem, 1rem);
+  animation: 2s 2s forwards callToActionShowUp;
 }
+
+@keyframes callToActionShowUp {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn:hover {
   background: linear-gradient(120deg, orange, red);
 }

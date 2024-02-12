@@ -1,28 +1,15 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
-import masonry from 'masonry-layout';
 export default {
   components: {
     Navigation: MainNavigation
   },
-  data() {
-    return {
-      facilityMasonry: null
-    };
-  },
+
   methods: {
-    facilityHandleLoad() {
-      console.log('test');
-      this.facilityMasonry.layout();
-    }
+
   },
   mounted() {
-    const gridContainer = this.$refs.facilityContent;
-    this.facilityMasonry = new masonry(gridContainer, {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
+
   }
 };
 </script>

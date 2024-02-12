@@ -47,9 +47,15 @@
       <div class="container-fluid ps-5">
         <div class="row">
           <div class="social-icon col-md-4 d-flex flex-warp">
-            <div class="fb"><a href=""><i class="bi bi-facebook fs-4"></i></a></div>
-            <div class="int"><a href=""><i class="int bi bi-instagram fs-4"></i></a></div>
-            <div class="yt"><a href=""><i class="yt bi bi-youtube fs-4"></i></a></div>
+            <div class="fb">
+              <a href=""><i class="bi bi-facebook fs-4"></i></a>
+            </div>
+            <div class="int">
+              <a href=""><i class="int bi bi-instagram fs-4"></i></a>
+            </div>
+            <div class="yt">
+              <a href=""><i class="yt bi bi-youtube fs-4"></i></a>
+            </div>
           </div>
           <div class="col-md-7">
             <div class="copyright d-flex justify-content-end">

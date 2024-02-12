@@ -41,13 +41,15 @@ export default {
 
           <span class="ms-3 hero-brand-hotel">Hotel</span>
         </h1>
-        <router-link to=""><button class="btn">Let's Get Started</button></router-link>
+        <router-link to=""><button class="btn text-white">Let's Get Started</button></router-link>
       </div>
     </div>
   </section>
   <section class="about container">
     <div class="row">
-      <div class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center">
+      <div
+        class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center"
+      >
         <div class="px-5">
           <h3 class="about-brand">Ezzy hotel</h3>
           <h1 class="about-welcome-title">Welcome</h1>
@@ -78,7 +80,10 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow p-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg" class="w-100 rounded" />
+              <img
+                src="@/assets/img/landing-page/rooftop-wedding-chapel.jpg"
+                class="w-100 rounded"
+              />
             </div>
             <div>
               <h4 class="text-uppercase my-3">Rooftop Wedding Chapel</h4>
@@ -98,7 +103,7 @@ export default {
         <div class="col-lg-4 col-12">
           <div class="shadow px-3 py-4 rounded">
             <div class="w-100">
-              <img src="@/assets/img/landing-page/room01.jpg" class="w-100 rounded-2" />
+              <img src="@/assets/img/accomodation/room01.jpg" class="w-100 rounded-2" />
             </div>
             <div>
               <h4 class="text-uppercase my-3">EZZY Rooms & Suites</h4>
@@ -167,22 +172,30 @@ export default {
           <div class="row gy-4">
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/restaurant.jpg" class="w-100 facility-img-height-expand" />
+                <img
+                  src="@/assets/img/landing-page/restaurant.jpg"
+                  class="w-100 facility-img-height-expand"
+                />
               </div>
-              <div class="facility-name"> Restaurant</div>
+              <div class="facility-name">Restaurant</div>
             </div>
             <div class="col-md-6 col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/meeting-room.jpg" class="w-100 facility-img-height-expand shadow" />
+                <img
+                  src="@/assets/img/landing-page/meeting-room.jpg"
+                  class="w-100 facility-img-height-expand shadow"
+                />
               </div>
-              <div class="facility-name"> Meeting room </div>
+              <div class="facility-name">Meeting room</div>
             </div>
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/bar.jpg" class="w-100 facility-img-height-short" />
+                <img
+                  src="@/assets/img/landing-page/bar.jpg"
+                  class="w-100 facility-img-height-short"
+                />
               </div>
-              <div class="facility-name"> Cafe & Bar </div>
-
+              <div class="facility-name">Cafe & Bar</div>
             </div>
           </div>
         </div>
@@ -192,25 +205,62 @@ export default {
               <div class="facility-img-wrapper">
                 <img src="@/assets/img/landing-page/gym.jpg" class="w-100" />
               </div>
-              <div class="facility-name"> Fitness center </div>
-
+              <div class="facility-name">Fitness center</div>
             </div>
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
                 <img src="@/assets/img/landing-page/kids-club.jpg" class="w-100" />
               </div>
-              <div class="facility-name">
-                Kids club
-              </div>
+              <div class="facility-name">Kids club</div>
             </div>
 
             <div class="col-12 position-relative">
               <div class="facility-img-wrapper">
-                <img src="@/assets/img/landing-page/boutique.jpg" style="object-position: top"
-                  class="w-100 facility-img-height-expand-2 " />
+                <img
+                  src="@/assets/img/landing-page/boutique.jpg"
+                  style="object-position: top"
+                  class="w-100 facility-img-height-expand-2"
+                />
               </div>
               <div class="facility-name">Boutique</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="booking">
+    <div class="container">
+      <div class="custom-card w-100">
+        <div class="row justify-content-around">
+          <div class="col-2">
+            <h5>Date</h5>
+            <input type="datetime-local" name="Date" placeholder="Date" class="booking-input" />
+          </div>
+          <div class="col-2">
+            <h5>Check-in</h5>
+            <input
+              type="datetime-local"
+              name="Checkin"
+              placeholder="*Check-in"
+              class="booking-input"
+            />
+          </div>
+          <div class="col-2">
+            <h5>Check-out</h5>
+            <input
+              type="datetime-local"
+              name="Checkout"
+              placeholder="*Check-out"
+              class="booking-input"
+            />
+          </div>
+          <div class="col-2">
+            <h5>Promo Code</h5>
+            <input type="number" name="Name" placeholder="*Promo Code" class="booking-input" />
+          </div>
+          <div class="col-2">
+            <router-link to=""><button class="booking-button">Book Now</button></router-link>
           </div>
         </div>
       </div>
@@ -252,6 +302,7 @@ export default {
   font-family: 'Courgette', sans-serif;
   font-weight: 600;
   position: relative;
+  margin-bottom: -8px;
   animation: 1s forwards welcome-showup;
 }
 
@@ -372,14 +423,14 @@ export default {
   overflow: hidden;
 }
 
-.about-img>img {
+.about-img > img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   transition: all 300ms;
 }
 
-.about-img>img:hover {
+.about-img > img:hover {
   transform: scale(1.2);
 }
 
@@ -431,7 +482,7 @@ export default {
 }
 
 .facility {
-  background-color: #F3EFEA;
+  background-color: #f3efea;
 }
 
 .facility img {
@@ -494,7 +545,6 @@ export default {
 
 .facility-img-wrapper {
   overflow: hidden;
-
 }
 
 .facility-img-wrapper img {
@@ -506,12 +556,38 @@ export default {
 }
 
 .btn {
-  background: linear-gradient(80deg, #FFA500, orangered);
-  border-radius: 40px;
+  background: linear-gradient(80deg, #ffa500, orangered);
+  border-radius: 15px;
   font-weight: 500;
   padding: 10px 20px;
+  border: none;
 }
-
+.btn:hover {
+  background: linear-gradient(120deg, orange, red);
+}
+.custom-card {
+  padding-left: 50px;
+}
+.booking .container {
+  padding: 50px;
+}
+.booking-input {
+  padding: 8px;
+  border-radius: 8px;
+}
+.booking-button {
+  width: 100%;
+  padding: 8px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  margin-top: 32px;
+  transition: all 500ms;
+}
+.booking-button:hover {
+  background: black;
+  color: white;
+}
 @media only screen and (min-width: 500px) {
   .hero-text-content {
     margin-top: -50px;

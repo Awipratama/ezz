@@ -92,31 +92,52 @@ export default {
           <span class="text-brand-main">Hotel</span>
         </span>
       </a>
-      <button class="btn btn-white border d-block d-md-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <button
+        class="btn btn-white border d-block d-md-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
         <div class="offcanvas-header text-uppercase d-flex align-items-center d-block d-md-none">
           <h5 id="offcanvasRightLabel"><span>Ezzy</span> Hotel</h5>
-          <button type="button" class="btn-close text-reset d-block d-md-none" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close text-reset d-block d-md-none"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
         </div>
         <div class="offcanvas-body d-block d-md-none">
           <ul class="navbar-nav">
             <li class="nav-item" :class="isActive('home')">
-              <router-link class="nav-link fs-3 px-3" to="/"><i class="bi bi-house-add fs-1 pe-2"></i> Home</router-link>
+              <router-link class="nav-link fs-3 px-3" to="/"
+                ><i class="bi bi-house-add fs-1 pe-2"></i> Home</router-link
+              >
             </li>
             <li class="nav-item" :class="isActive('accomodation')">
-              <router-link class="nav-link fs-3 px-3" to="/accomodation"><i class="bi bi-calendar-check fs-1 pe-2"></i>
-                Accomodation</router-link>
+              <router-link class="nav-link fs-3 px-3" to="/accomodation"
+                ><i class="bi bi-calendar-check fs-1 pe-2"></i> Accomodation</router-link
+              >
             </li>
             <li class="nav-item" :class="isActive('dining')">
               <router-link class="nav-link fs-3 px-3" to="/dining">Dining</router-link>
             </li>
+            <li class="nav-item" :class="isActive('galery')">
+              <router-link class="nav-link fs-3 px-3" to="/galery">Gallery</router-link>
+            </li>
             <li class="nav-item" :class="isActive('contact')">
-              <router-link class="nav-link fs-3 px-3" to=""><i class="bi bi-person-circle fs-1 pe-2"></i>
-                Contact</router-link>
+              <router-link class="nav-link fs-3 px-3" to=""
+                ><i class="bi bi-person-circle fs-1 pe-2"></i> Contact</router-link
+              >
             </li>
           </ul>
         </div>
@@ -132,8 +153,10 @@ export default {
           <li class="nav-item" :class="isActive('dining')">
             <router-link class="nav-link" to="/dining">Dining</router-link>
           </li>
+          <li class="nav-item" :class="isActive('galery')">
+            <router-link class="nav-link" to="/galery">Gallery</router-link>
+          </li>
           <li class="nav-item" :class="isActive('contact')">
-
             <router-link class="nav-link" to="/contact">Contact</router-link>
           </li>
         </ul>

@@ -3,19 +3,19 @@
     <div class="container">
       <div class="custom-card shadow w-100">
         <div class="row justify-content-around">
-          <div class="col-2 d-none d-md-block">
+          <div class="col-2 d-none d-lg-block">
             <h5 class="input-text">Date</h5>
             <input type="date" name="Date" placeholder="Date" class="booking-input" />
           </div>
-          <div class="col-2 d-none d-md-block">
+          <div class="col-2 d-none d-lg-block">
             <h5 class="input-text">Check-in</h5>
             <input type="date" name="Checkin" placeholder="*Check-in" class="booking-input" />
           </div>
-          <div class="col-2 d-none d-md-block">
+          <div class="col-2 d-none d-lg-block">
             <h5 class="input-text">Check-out</h5>
             <input type="date" name="Checkout" placeholder="*Check-out" class="booking-input" />
           </div>
-          <div class="col-2 d-none d-md-block">
+          <div class="col-2 d-none d-lg-block">
             <h5 class="input-text">Promo Code</h5>
             <input type="number" name="Name" placeholder="*Promo Code" class="booking-input" />
           </div>

@@ -33,11 +33,11 @@ export default {
 
           <span class="ms-3 hero-brand-hotel">Hotel</span>
         </h1>
-        <router-link to=""><button class="btn text-white">Let's Get Started</button></router-link>
+        <a href="#about"><button class="btn text-white">Let's Get Started</button></a>
       </div>
     </div>
   </section>
-  <section class="about container">
+  <section class="about container" id="about">
     <div class="row">
       <div
         class="col-lg-6 col-12 text-capitalize text-center d-flex flex-column justify-content-center"

@@ -1,16 +1,13 @@
 <script>
-import MainNavigation from '@/components/MainNavigation.vue';
 import MainFooter from '@/components/MainFooter.vue';
 export default {
   components: {
-    Navigation: MainNavigation,
     MainFooter: MainFooter
   }
 };
 </script>
 
 <template>
-  <Navigation />
   <section class="hero">
     <div class="notfound d-flex flex-column align-items-center">
       <h1 class="main-title pt-5">404</h1>

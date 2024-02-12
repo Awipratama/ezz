@@ -25,7 +25,7 @@ export default {
   <section class="accomodation">
     <div class="accomodation-listing">
       <div class="cbp-filters py-4 d-flex justify-content-center">
-        <a href="" class="cbp-filter-item px-2"> Semua</a>
+        <a href="" class="cbp-filter-item px-2"> All Rooms</a>
         <a href="" class="cbp px-3">Regular Rooms</a>
         <a href="" class="cbp px-3">Suite Rooms</a>
         <a href="" class="cbp px-3">Villa</a>

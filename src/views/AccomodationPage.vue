@@ -5,7 +5,7 @@ import MainFooter from '@/components/MainFooter.vue';
 export default {
   components: {
     Navigation: MainNavigation,
-    Footer: MainFooter
+    MainFooter: MainFooter
   }
 };
 </script>
@@ -369,7 +369,7 @@ export default {
       </div>
     </div>
   </section>
-  <Footer />
+  <MainFooter />
 </template>
 
 <style scoped>

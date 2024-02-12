@@ -111,8 +111,8 @@ export default {
               <router-link class="nav-link fs-3 px-3" to="/accomodation"><i class="bi bi-calendar-check fs-1 pe-2"></i>
                 Accomodation</router-link>
             </li>
-            <li class="nav-item">
-              <router-link class="nav-link fs-3 px-3" to="">Pricing</router-link>
+            <li class="nav-item" :class="isActive('dining')">
+              <router-link class="nav-link fs-3 px-3" to="/dining">Dining</router-link>
             </li>
             <li class="nav-item" :class="isActive('contact')">
               <router-link class="nav-link fs-3 px-3" to=""><i class="bi bi-person-circle fs-1 pe-2"></i>

@@ -1,23 +1,21 @@
 <script>
 import MainNavigation from '@/components/MainNavigation.vue';
 import MainFooter from '@/components/MainFooter.vue';
+import MainBooking from '@/components/MainBooking.vue';
 
 export default {
   components: {
     Navigation: MainNavigation,
-    MainFooter: MainFooter
+    MainFooter: MainFooter,
+    Booking: MainBooking
   },
   data() {
     return {
       facilityMasonry: null
     };
   },
-  methods: {
-
-  },
-  mounted() {
-
-  }
+  methods: {},
+  mounted() {}
 };
 </script>
 
@@ -146,8 +144,10 @@ export default {
                 learn at the some time with the professional play ers that will take care of them.
               </div>
               <div class="discover-learn-more">
-                <span class="me-2">Learn more</span>
-                <i class="bi bi-arrow-right"></i>
+                <router-link to="/pools" class="text-decoration-none text-secondary">
+                  <span class="me-2">Learn more</span>
+                  <i class="bi bi-arrow-right"></i>
+                </router-link>
               </div>
             </div>
           </div>
@@ -222,43 +222,7 @@ export default {
         </div>
       </div>
     </div>
-  </section>
-  <section class="booking">
-    <div class="container">
-      <div class="custom-card shadow w-100">
-        <div class="row justify-content-around">
-          <div class="col-2">
-            <h5 class="input-text">Date</h5>
-            <input type="datetime-local" name="Date" placeholder="Date" class="booking-input" />
-          </div>
-          <div class="col-2">
-            <h5 class="input-text">Check-in</h5>
-            <input
-              type="datetime-local"
-              name="Checkin"
-              placeholder="*Check-in"
-              class="booking-input"
-            />
-          </div>
-          <div class="col-2">
-            <h5 class="input-text">Check-out</h5>
-            <input
-              type="datetime-local"
-              name="Checkout"
-              placeholder="*Check-out"
-              class="booking-input"
-            />
-          </div>
-          <div class="col-2">
-            <h5 class="input-text">Promo Code</h5>
-            <input type="number" name="Name" placeholder="*Promo Code" class="booking-input" />
-          </div>
-          <div class="col-2">
-            <router-link to=""><button class="booking-button">Book Now</button></router-link>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Booking />
   </section>
   <MainFooter />
 </template>
@@ -559,36 +523,6 @@ export default {
 }
 .btn:hover {
   background: linear-gradient(120deg, orange, red);
-}
-.custom-card {
-  padding-left: 50px;
-}
-.custom-card {
-  padding: 30px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  /* box-shadow: 1px 3px 0 3px gray; */
-}
-.booking-input {
-  padding: 8px;
-  border-radius: 8px;
-}
-.input-text {
-  font-weight: 400;
-  font-size: 16px;
-}
-.booking-button {
-  width: 100%;
-  padding: 8px;
-  background: black;
-  color: white;
-  border-radius: 8px;
-  margin-top: 27px;
-  transition: all 500ms;
-}
-.booking-button:hover {
-  background: white;
-  color: black;
 }
 @media only screen and (min-width: 500px) {
   .hero-text-content {

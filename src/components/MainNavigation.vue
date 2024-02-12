@@ -40,7 +40,7 @@ export default {
         <span>Ezzy</span> Hotel
       </a>
       <button
-        class="btn btn-white border"
+        class="btn btn-white border d-block d-md-none"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasRight"
@@ -54,16 +54,16 @@ export default {
         id="offcanvasRight"
         aria-labelledby="offcanvasRightLabel"
       >
-        <div class="offcanvas-header text-uppercase d-flex align-items-center">
+        <div class="offcanvas-header text-uppercase d-flex align-items-center d-block d-md-none">
           <h5 id="offcanvasRightLabel"><span>Ezzy</span> Hotel</h5>
           <button
             type="button"
-            class="btn-close text-reset"
+            class="btn-close text-reset d-block d-md-none"
             data-bs-dismiss="offcanvas"
             aria-label="Close"
           ></button>
         </div>
-        <div class="offcanvas-body">
+        <div class="offcanvas-body d-block d-md-none">
           <ul class="navbar-nav">
             <li class="nav-item" :class="isActive('home')">
               <router-link class="nav-link fs-3 px-3" to="/"

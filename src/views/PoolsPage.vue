@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <Navigation />
+  <Navigation active="pool" />
   <section class="hero text-center">
     <h4 class="sub-title"><span>Ezzy</span> Hotel</h4>
     <h1 class="title-hero">Adult & Kid's Pool</h1>
@@ -83,48 +83,57 @@ export default {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
 .sub-title {
   font-style: italic;
   font-family: 'courgette', sans-serif;
   margin-bottom: -8px;
 }
+
 .sub-title span {
   color: orange;
 }
+
 .title-hero {
   font-size: 3rem;
   margin-top: 10px;
   text-transform: uppercase;
 }
+
 .sub-text {
   max-width: 700px;
   padding-inline: 1rem;
   margin-inline: auto;
   font-size: 1rem;
 }
+
 .pool-experience-img-wrapper img {
   aspect-ratio: 6/4;
   object-fit: cover;
 }
+
 .pool-experience {
   background-color: #f3efea;
   padding-top: 30px;
   padding-bottom: 20px;
 }
+
 .dining-experience-img-wrapper {
   overflow: hidden;
   border-radius: 8px;
   background-color: inherit;
   max-width: 100%;
 }
+
 .pool-experience-content {
   padding: 30px;
   margin-block: auto;
 }
+
 .row {
   background-color: rgba(239, 229, 223, 0.445);
 }
-.pool-experience-content-wrapper > .row:nth-child(even) .pool-experience-content {
+
+.pool-experience-content-wrapper>.row:nth-child(even) .pool-experience-content {
   order: -1;
-}
-</style>
+}</style>

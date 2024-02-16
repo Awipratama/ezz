@@ -56,10 +56,10 @@ export default {
               <a href="/facebook.com"><i class="bi bi-facebook fs-4"></i></a>
             </div>
             <div class="int">
-              <a href="/instagram.com"><i class="int bi bi-instagram fs-4"></i></a>
+              <a href="http://instagram.com/ezzyhotel"><i class="int bi bi-instagram fs-4"></i></a>
             </div>
             <div class="yt">
-              <a href="/youtube.com"><i class="yt bi bi-youtube fs-4"></i></a>
+              <a href="https://www.youtube.com/results?search_query=ezzy+tv"><i class="yt bi bi-youtube fs-4"></i></a>
             </div>
           </div>
           <div class="col-lg-7 col-12">

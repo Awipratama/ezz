@@ -97,7 +97,7 @@ export default {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas"
-        data-bs-backdrop="false">
+        data-bs-backdrop="true">
         <div class="offcanvas-header text-uppercase d-flex flex-column d-lg-none">
           <button type="button" class="btn-close ms-auto p-3 text-reset d-block d-lg-none" data-bs-toggle="#offcanvas"
             data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -199,7 +199,8 @@ export default {
   transition: all 200ms;
 }
 
-.nav-link {
+.nav-link,
+.nav-link.show {
   color: white;
 }
 

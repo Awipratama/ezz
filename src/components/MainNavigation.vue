@@ -92,15 +92,30 @@ export default {
           <span class="text-brand-main">Hotel</span>
         </span>
       </a>
-      <button class="btn btn-white border d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvas" aria-controls="offcanvas">
+      <button
+        class="btn btn-white border d-block d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvas"
+        aria-controls="offcanvas"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvas"
-        data-bs-backdrop="true">
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvas"
+        aria-labelledby="offcanvas"
+        data-bs-backdrop="true"
+      >
         <div class="offcanvas-header text-uppercase d-flex flex-column d-lg-none">
-          <button type="button" class="btn-close ms-auto p-3 text-reset d-block d-lg-none" data-bs-toggle="#offcanvas"
-            data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <button
+            type="button"
+            class="btn-close ms-auto p-3 text-reset d-block d-lg-none"
+            data-bs-toggle="#offcanvas"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
           <div class="d-flex justify-content-center py-3 ps-2">
             <img src="@/assets/img/generic/logo.png" width="80" class="me-2" />
           </div>
@@ -171,13 +186,23 @@ export default {
             <a class="nav-link" href="/contact">Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              More
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              More Facilities
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" :class="isActive('pool')" href="/pools">Pools</a></li>
-              <li><a class="dropdown-item" :class="isActive('wedding')" href="/wedding">Wedding</a></li>
+            <ul class="dropdown-menu py-3 px-2" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" :class="isActive('pool')" href="/pools">Pools</a>
+              </li>
+              <li>
+                <a class="dropdown-item" :class="isActive('wedding')" href="/wedding">Wedding</a>
+              </li>
             </ul>
           </li>
         </ul>

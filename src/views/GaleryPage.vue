@@ -9,7 +9,6 @@ export default {
   data() {
     return {
       images: null,
-      category: 'all'
     };
   },
   created() {

@@ -196,12 +196,14 @@ export default {
             >
               More Facilities
             </a>
-            <ul class="dropdown-menu py-3 px-2" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu py-3 px-3" aria-labelledby="navbarDropdownMenuLink">
               <li>
-                <a class="dropdown-item" :class="isActive('pool')" href="/pools">Pools</a>
+                <a class="dropdown-item py-2" :class="isActive('pool')" href="/pools">Pools</a>
               </li>
               <li>
-                <a class="dropdown-item" :class="isActive('wedding')" href="/wedding">Wedding</a>
+                <a class="dropdown-item py-2" :class="isActive('wedding')" href="/wedding"
+                  >Wedding</a
+                >
               </li>
             </ul>
           </li>
@@ -305,5 +307,29 @@ export default {
 
 .nav-icon {
   font-size: 1.5rem;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  background-color: #ed117f;
+  font-weight: 600;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  border: 1px solid white;
+  background-color: black;
+}
+
+.dropdown-item.active:hover {
+  background-color: #ed117f;
+  border: none;
 }
 </style>
